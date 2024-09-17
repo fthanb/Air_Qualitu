@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 
-gy_df = pd.read_csv("all_data.csv")
+gy_df = pd.read_csv("dashboard/all_data.csv")
 
 temp_hujan = gy_df.groupby(by='musim').agg({
     "TEMP": "mean",
