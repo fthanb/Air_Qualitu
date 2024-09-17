@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 
-gy_df = pd.read_csv("all_data.csv")
+gy_df = pd.read_csv("dashboard/all_data.csv")
 
 temp_hujan = gy_df.groupby(by='musim').agg({
     "TEMP": "mean",
@@ -73,8 +73,8 @@ with st.expander("Kesimpulan : "):
         "kecuali jumlah partikel PM2.5 yang termasuk tidak aman (kategori: Tidak Sehat)" 
         "Berdasarkan Indeks Standar Pencemar Udara."
     )
-    st.image("ispu.png", caption="Indeks Standar Pencemar Udara (ISPU)", use_column_width=True)
-    st.image("ispu2.png", caption="https://ditppu.menlhk.go.id/portal/read/indeks-standar-pencemar-udara-ispu-sebagai-informasi-mutu-udara-ambien-di-indonesia", use_column_width=True)
+    st.image("dashboard/ispu.png", caption="Indeks Standar Pencemar Udara (ISPU)", use_column_width=True)
+    st.image("dashboard/ispu2.png", caption="https://ditppu.menlhk.go.id/portal/read/indeks-standar-pencemar-udara-ispu-sebagai-informasi-mutu-udara-ambien-di-indonesia", use_column_width=True)
 
 st.subheader(" ")
 st.subheader("\nRata-rata Suhu dan Curah Hujan Berdasarkan Musim")
