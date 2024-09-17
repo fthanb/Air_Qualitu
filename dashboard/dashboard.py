@@ -72,7 +72,7 @@ with st.expander("Konklusi: "):
         "Jumlah partikel-partikel yang terdapat dalam udara di sekitar Guanyuan termasuk sedikit (kategori: relatif aman), "
         "kecuali jumlah partikel PM2.5 yang termasuk ke dalam kategori: tidak aman. Berdasarkan Indeks Standar Pencemar Udara."
     )
-    st.image("ispu.png", caption="Indeks Standar Pencemar Udara (ISPU)", use_column_width=True)
+    st.image("dashboard/ispu.png", caption="Indeks Standar Pencemar Udara (ISPU)", use_column_width=True)
 
 st.subheader(" ")
 st.subheader("\nRata-rata Suhu dan Curah Hujan Berdasarkan Musim")
