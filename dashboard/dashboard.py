@@ -69,8 +69,7 @@ for i, polusi in enumerate(melt['Polusi'].unique()):
 
 with st.expander("Kesimpulan : "):
     st.write(
-        "Rata-rata jumlah partikel polusi udara di sekitar Guanyuan termasuk relatif aman (kategori: Baik & Sedang),"
-        "kecuali jumlah partikel PM2.5 yang termasuk tidak aman (kategori: Tidak Sehat)" 
+        "Rata-rata jumlah partikel polusi udara di sekitar Guanyuan termasuk relatif aman (kategori: Baik & Sedang), kecuali jumlah partikel PM2.5 yang termasuk tidak aman (kategori: Tidak Sehat) "
         "Berdasarkan Indeks Standar Pencemar Udara."
     )
     st.image("dashboard/ispu.png", caption="Indeks Standar Pencemar Udara (ISPU)", use_column_width=True)
